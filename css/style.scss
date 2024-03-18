@@ -1,4 +1,9 @@
 @use 'partial';
+@use 'mixins';
+
+header {
+    text-align: center;
+}
 
 body {
     font-family: "Orelega One", serif;
@@ -11,19 +16,6 @@ img {
     height: auto;
 }
 
-h1 {
+.overskrift {
     color: partial.$grøn;
-}
-
-a {
-    color: partial.$sort; 
-    text-decoration: none; 
-}
-
-a:hover {
-    color: partial.$lyserød;
-}
-
-a:visited {
-    color: partial.$sort;
 }
