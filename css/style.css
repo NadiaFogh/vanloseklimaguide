@@ -7,4 +7,21 @@ body {
 img {
   max-width: 12%;
   height: auto;
+}
+
+h1 {
+  color: #03AB50;
+}
+
+a {
+  color: #343434;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F290B9;
+}
+
+a:visited {
+  color: #343434;
 }/*# sourceMappingURL=style.css.map */

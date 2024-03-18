@@ -1,10 +1,29 @@
+@use 'partial';
+
 body {
     font-family: "Orelega One", serif;
-    color: #343434;
-    background-color: #F5F1EA;
+    color: partial.$sort;
+    background-color: partial.$beige;
 }
 
 img {
     max-width: 12%;
     height: auto;
+}
+
+h1 {
+    color: partial.$grøn;
+}
+
+a {
+    color: partial.$sort; 
+    text-decoration: none; 
+}
+
+a:hover {
+    color: partial.$lyserød;
+}
+
+a:visited {
+    color: partial.$sort;
 }
