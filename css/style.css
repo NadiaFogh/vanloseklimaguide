@@ -3,6 +3,12 @@ body {
   background-color: #F5F1EA;
   margin: 0;
   font-family: "Bebas Neue", sans-serif;
+  color: #343434;
+}
+
+img {
+  max-width: 10%; /* Setter maksimal bredde til 50% av foreldreelementet */
+  height: auto; /* Beholder proporsjonene av bildet */
 }
 
 nav ul {
@@ -40,11 +46,10 @@ nav ul li a:hover:hover {
 .logoboks {
   display: flex; /* Setter beholderen til en flex-boks */
   align-items: center; /* Sentrerer innholdet vertikalt */
-  padding: 20px;
+  padding: 35px;
   justify-content: center;
 }
-
-img {
+.logoboks img {
   max-width: 15%; /* Setter maksimal bredde til 50% av foreldreelementet */
   height: auto; /* Beholder proporsjonene av bildet */
 }
@@ -56,4 +61,43 @@ img {
 h1 {
   color: #03AB50;
   font-size: 3.5em;
+}
+
+h2 {
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+.sidetekst {
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
+footer {
+  background-color: #03AB50;
+  color: #F5F1EA;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer img {
+  max-width: 20%; /* Setter maksimal bredde til 50% av foreldreelementet */
+  height: auto; /* Beholder proporsjonene av bildet */
+}
+
+.section {
+  flex: 1; /* Deler tilgjengelig plass likt mellom alle seksjoner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Sentrerer innholdet vertikalt */
+  align-items: center; /* Sentrerer innholdet horisontalt */
+}
+
+.section p {
+  margin: 10px 0; /* Legger til en liten margin over og under hvert <p> element */
+  font-family: "League Spartan", sans-serif;
+}
+
+.section h3 {
+  margin-bottom: 0; /* Fjerner standard margintopp for overskriften */
 }/*# sourceMappingURL=style.css.map */
