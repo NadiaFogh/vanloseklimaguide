@@ -1,0 +1,11 @@
+@use 'partial';
+
+@mixin link-styling {
+    text-decoration: none;
+    color: partial.$beige; 
+    &:hover {
+      text-decoration: none;
+      color: partial.$lyserød;
+      background-color: partial.$beige;
+    }
+  }

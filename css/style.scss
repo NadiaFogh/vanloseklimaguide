@@ -1,21 +1,69 @@
 @use 'partial';
 @use 'mixins';
 
-header {
-    text-align: center;
+body {
+    background-color: partial.$beige;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
-body {
-    font-family: "Orelega One", serif;
-    color: partial.$sort;
-    background-color: partial.$beige;
+//start på lyserød header
+
+header {
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: partial.$lyserød;
+    color: partial.$beige;
+    padding: 5px;
+}
+
+nav ul li {
+    flex: 1; /* Deler tilgjengelig plass likt mellom alle li-elementer */
+}
+
+nav ul li a {
+    display: block;
+    color: partial.$beige;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    @include mixins.link-styling;
+}
+
+//slut på lyserød header
+
+//jordklode med tekst start
+
+
+.logoboks {
+    display: flex; /* Setter beholderen til en flex-boks */
+    align-items: center; /* Sentrerer innholdet vertikalt */
+    padding: 20px;
+    justify-content: center;
+    
 }
 
 img {
-    max-width: 12%;
-    height: auto;
+    max-width: 15%; /* Setter maksimal bredde til 50% av foreldreelementet */
+    height: auto; /* Beholder proporsjonene av bildet */
 }
 
-.overskrift {
-    color: partial.$grøn;
+.logotekst {
+    padding-left: 20px; /* Legg til luft på venstre side av teksten for å skille den fra bildet */
 }
+
+h1 {
+    color: partial.$grøn;
+    font-size: 3.5em;
+}  
+
+// jordklode med tekst slut

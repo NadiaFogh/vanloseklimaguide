@@ -1,18 +1,59 @@
-header {
-  text-align: center;
+@charset "UTF-8";
+body {
+  background-color: #F5F1EA;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-body {
-  font-family: "Orelega One", serif;
-  color: #343434;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #F290B9;
+  color: #F5F1EA;
+  padding: 5px;
+}
+
+nav ul li {
+  flex: 1; /* Deler tilgjengelig plass likt mellom alle li-elementer */
+}
+
+nav ul li a {
+  display: block;
+  color: #F5F1EA;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #F5F1EA;
+}
+nav ul li a:hover:hover {
+  text-decoration: none;
+  color: #F290B9;
   background-color: #F5F1EA;
 }
 
-img {
-  max-width: 12%;
-  height: auto;
+.logoboks {
+  display: flex; /* Setter beholderen til en flex-boks */
+  align-items: center; /* Sentrerer innholdet vertikalt */
+  padding: 20px;
+  justify-content: center;
 }
 
-.overskrift {
+img {
+  max-width: 15%; /* Setter maksimal bredde til 50% av foreldreelementet */
+  height: auto; /* Beholder proporsjonene av bildet */
+}
+
+.logotekst {
+  padding-left: 20px; /* Legg til luft på venstre side av teksten for å skille den fra bildet */
+}
+
+h1 {
   color: #03AB50;
+  font-size: 3.5em;
 }/*# sourceMappingURL=style.css.map */
