@@ -107,7 +107,7 @@ footer {
   justify-content: space-between;
 }
 footer img {
-  max-width: 5em; /* Setter maksimal bredde til 50% av foreldreelementet */
+  max-width: 7em; /* Setter maksimal bredde til 50% av foreldreelementet */
   height: auto; /* Beholder proporsjonene av bildet */
 }
 
