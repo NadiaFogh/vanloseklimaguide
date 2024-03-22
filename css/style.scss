@@ -148,10 +148,10 @@ footer {
     border-radius: 8px;
 }
 
-.kontaktformular h4 {
+.kontaktformular h2 {
     margin-bottom: 20px;
     text-align: center;
-    color: partial.$grøn;
+    color: partial.$beige;
     font-size: xx-large;
     margin-top: 4px;
 }
@@ -184,7 +184,7 @@ textarea {
 button {
     padding: 10px 20px;
     background-color: partial.$beige;
-    color: partial.$grøn;
+    color: partial.$lyserød;
     border: none;
     border-radius: 4px;
     cursor: pointer;
