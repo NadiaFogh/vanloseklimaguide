@@ -16,8 +16,8 @@ p {
     font-weight: bold;
     @include mixins.margin;
         img {
-            max-width: 0.6em; /* Setter maksimal bredde til 50% av foreldreelementet */
-            height: auto; /* Beholder proporsjonene av bildet */
+            max-width: 0.6em; 
+            height: auto; 
         }
 }
 
@@ -38,7 +38,7 @@ nav ul {
 }
 
 nav ul li {
-    flex: 1; /* Deler tilgjengelig plass likt mellom alle li-elementer */
+    flex: 1; 
 }
 
 nav ul li a {
@@ -58,14 +58,14 @@ nav ul li a:hover {
 //start header
 
 .logoboks {
-    display: flex; /* Setter beholderen til en flex-boks */
-    align-items: center; /* Sentrerer innholdet vertikalt */
+    display: flex; 
+    align-items: center; 
     padding: 35px;
     justify-content: center;
 
     img {
-        max-width: 11em; /* Setter maksimal bredde til 50% av foreldreelementet */
-        height: auto; /* Beholder proporsjonene av bildet */
+        max-width: 11em; 
+        height: auto; 
     }
     
 }
@@ -73,7 +73,7 @@ nav ul li a:hover {
 
 
 .logotekst {
-    padding-left: 20px; /* Legg til luft på venstre side av teksten for å skille den fra bildet */
+    padding-left: 20px;
 }
 
 h1 {
@@ -95,13 +95,13 @@ h2 {
 
 .jordklodeimg {
     display: flex;
-    justify-content: flex-end; /* Placerer elementer i containeren til højre */
-    align-items: center; /* Centrerer elementer lodret */
+    justify-content: flex-end; 
+    align-items: center; 
     @include mixins.margin;
     margin-bottom: 1.5em;
         img {
-        max-width: 9em; /* Sætter maksimal bredde til 11em */
-        height: auto; /* Beholder billedets proportioner */
+        max-width: 9em;
+        height: auto; 
         }
 }
 
@@ -115,26 +115,26 @@ footer {
     justify-content: space-between;
 
         img {
-            max-width: 7em; /* Setter maksimal bredde til 50% av foreldreelementet */
-            height: auto; /* Beholder proporsjonene av bildet */
+            max-width: 7em; 
+            height: auto; 
         }
 }
 
 .footerstyle {
-    flex: 1; /* Deler tilgjengelig plass likt mellom alle seksjoner */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Sentrerer innholdet vertikalt */
-    align-items: center; /* Sentrerer innholdet horisontalt */
+    justify-content: center;
+    align-items: center; 
     
 }
 
 .footerstyle p {
-    margin: 10px 0; /* Legger til en liten margin over og under hvert <p> element */
+    margin: 10px 0;
 }
 
 .footerstyle h3 {
-    margin-bottom: 0; /* Fjerner standard margintopp for overskriften */
+    margin-bottom: 0; 
 }
 
 // formular
@@ -146,7 +146,6 @@ footer {
     background-color: partial.$lyserød;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 
 .kontaktformular h4 {
@@ -178,7 +177,7 @@ textarea {
     background-color: partial.$beige;
     color: partial.$grøn;
     font-family: "League Spartan", sans-serif;
-    outline: none; /* Fjern den standard fokusstil, hvis ønsket */
+    outline: none;
     resize: none;
 }
 
@@ -197,18 +196,21 @@ button:hover {
     color: partial.$beige;
 }
 
+
+
 @media only screen and (max-width: 600px) {
     img {
-        max-width: auto; /* Setter maksimal bredde til 50% av foreldreelementet */
-        height: auto; /* Beholder proporsjonene av bildet */
+        max-width: 50%; 
+        height: auto; 
     }
 
     footer {
-        flex-direction: column; /* Ændrer layout til stakket */
-        align-items: center; /* Centrer boksene */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footerstyle {
-        width: 80%; /* Sæt bredden til 80% for at give plads til en boks på en linje */
+        width: 80%; 
     }
+
 }

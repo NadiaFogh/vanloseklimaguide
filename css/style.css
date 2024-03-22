@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #F5F1EA;
   margin: 0;
@@ -16,8 +15,8 @@ p {
   margin-right: 11%;
 }
 .underoverskrift img {
-  max-width: 0.6em; /* Setter maksimal bredde til 50% av foreldreelementet */
-  height: auto; /* Beholder proporsjonene av bildet */
+  max-width: 0.6em;
+  height: auto;
 }
 
 h2 {
@@ -35,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-  flex: 1; /* Deler tilgjengelig plass likt mellom alle li-elementer */
+  flex: 1;
 }
 
 nav ul li a {
@@ -57,18 +56,18 @@ nav ul li a:hover:hover {
 }
 
 .logoboks {
-  display: flex; /* Setter beholderen til en flex-boks */
-  align-items: center; /* Sentrerer innholdet vertikalt */
+  display: flex;
+  align-items: center;
   padding: 35px;
   justify-content: center;
 }
 .logoboks img {
-  max-width: 11em; /* Setter maksimal bredde til 50% av foreldreelementet */
-  height: auto; /* Beholder proporsjonene av bildet */
+  max-width: 11em;
+  height: auto;
 }
 
 .logotekst {
-  padding-left: 20px; /* Legg til luft på venstre side av teksten for å skille den fra bildet */
+  padding-left: 20px;
 }
 
 h1 {
@@ -88,15 +87,15 @@ h2 {
 
 .jordklodeimg {
   display: flex;
-  justify-content: flex-end; /* Placerer elementer i containeren til højre */
-  align-items: center; /* Centrerer elementer lodret */
+  justify-content: flex-end;
+  align-items: center;
   margin-left: 11%;
   margin-right: 11%;
   margin-bottom: 1.5em;
 }
 .jordklodeimg img {
-  max-width: 9em; /* Sætter maksimal bredde til 11em */
-  height: auto; /* Beholder billedets proportioner */
+  max-width: 9em;
+  height: auto;
 }
 
 footer {
@@ -107,24 +106,24 @@ footer {
   justify-content: space-between;
 }
 footer img {
-  max-width: 7em; /* Setter maksimal bredde til 50% av foreldreelementet */
-  height: auto; /* Beholder proporsjonene av bildet */
+  max-width: 7em;
+  height: auto;
 }
 
 .footerstyle {
-  flex: 1; /* Deler tilgjengelig plass likt mellom alle seksjoner */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Sentrerer innholdet vertikalt */
-  align-items: center; /* Sentrerer innholdet horisontalt */
+  justify-content: center;
+  align-items: center;
 }
 
 .footerstyle p {
-  margin: 10px 0; /* Legger til en liten margin over og under hvert <p> element */
+  margin: 10px 0;
 }
 
 .footerstyle h3 {
-  margin-bottom: 0; /* Fjerner standard margintopp for overskriften */
+  margin-bottom: 0;
 }
 
 .kontaktformular {
@@ -134,7 +133,6 @@ footer img {
   background-color: #F290B9;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .kontaktformular h4 {
@@ -165,7 +163,7 @@ textarea {
   background-color: #F5F1EA;
   color: #03AB50;
   font-family: "League Spartan", sans-serif;
-  outline: none; /* Fjern den standard fokusstil, hvis ønsket */
+  outline: none;
   resize: none;
 }
 
@@ -186,14 +184,14 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
   img {
-    max-width: auto; /* Setter maksimal bredde til 50% av foreldreelementet */
-    height: auto; /* Beholder proporsjonene av bildet */
+    max-width: 50%;
+    height: auto;
   }
   footer {
-    flex-direction: column; /* Ændrer layout til stakket */
-    align-items: center; /* Centrer boksene */
+    flex-direction: column;
+    align-items: center;
   }
   .footerstyle {
-    width: 80%; /* Sæt bredden til 80% for at give plads til en boks på en linje */
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
